@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <img src="{{ image_url }}" alt="Dynamic Image">
+        <p>{{ description }}</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+            {% for item in data %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.email }}</td>
+                <td>{{ item.age }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div class="footer">
+            {{ footer_note }}
+        </div>
+    </div>
+</body>
+</html>
