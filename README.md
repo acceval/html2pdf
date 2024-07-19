@@ -20,7 +20,7 @@ You can install the necessary Python packages using pip:
 
 For ```WeasyPrint```, follow the installation instructions based on your operating system:
 
-- Ubuntu/Debian: sudo apt-get install weasyprint
+- Ubuntu/Debian: ```sudo apt-get install weasyprint```
 ### Usage
 1. Prepare Your Data: Modify the data list in the script to include what you wish to list in the PDF.
 2. Modify the Template (Optional): Adjust template.html to fit your layout and styling preferences.
