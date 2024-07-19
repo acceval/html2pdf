@@ -12,18 +12,15 @@ Features
 Before running the script, ensure you have the following installed:
 
 - Python 3.x
-- pdfkit
-- wkhtmltopdf
+- WeasyPrint
 - Jinja2
 
 You can install the necessary Python packages using pip:
-```pip install pdfkit Jinja2```
+```pip install weasyprint Jinja2```
 
-For ```wkhtmltopdf```, follow the installation instructions based on your operating system:
+For ```WeasyPrint```, follow the installation instructions based on your operating system:
 
-- Ubuntu/Debian: sudo apt-get install wkhtmltopdf
-- Windows: Download from wkhtmltopdf.org and add it to your system path.
-- macOS: Use Homebrew: brew install wkhtmltopdf
+- Ubuntu/Debian: sudo apt-get install weasyprint
 ### Usage
 1. Prepare Your Data: Modify the data list in the script to include the names, emails, and ages of the individuals you wish to list in the PDF.
 2. Modify the Template (Optional): Adjust template.html to fit your layout and styling preferences.

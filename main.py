@@ -1,5 +1,5 @@
-import pdfkit
 from jinja2 import Environment, FileSystemLoader
+from weasyprint import HTML
 
 # Prepare the template environment
 env = Environment(loader=FileSystemLoader('.'))
@@ -25,6 +25,6 @@ context = {
 rendered_html = template.render(context)
 
 # Convert to PDF
-pdfkit.from_string(rendered_html, 'output.pdf')
+HTML(string=rendered_html).write_pdf('output.pdf')
 
 print("PDF file has been created successfully!")
