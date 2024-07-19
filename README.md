@@ -22,7 +22,7 @@ For ```WeasyPrint```, follow the installation instructions based on your operati
 
 - Ubuntu/Debian: sudo apt-get install weasyprint
 ### Usage
-1. Prepare Your Data: Modify the data list in the script to include the names, emails, and ages of the individuals you wish to list in the PDF.
+1. Prepare Your Data: Modify the data list in the script to include what you wish to list in the PDF.
 2. Modify the Template (Optional): Adjust template.html to fit your layout and styling preferences.
 3. Run the Script: Execute the script to generate the PDF.
  ```python main.py```
