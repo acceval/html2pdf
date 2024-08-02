@@ -12,7 +12,7 @@ Features
 Before running the script, ensure you have the following installed:
 
 - Python 3.x
-- WeasyPrint
+- xhtml2pdf
 - Jinja2
 
 ### Usage
