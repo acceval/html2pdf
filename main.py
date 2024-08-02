@@ -1,5 +1,11 @@
 from jinja2 import Environment, FileSystemLoader
-from weasyprint import HTML
+from xhtml2pdf import pisa
+
+# Define a function to convert HTML to PDF
+def convert_html_to_pdf(source_html, output_filename):
+    with open(output_filename, "w+b") as result_file:
+        pisa_status = pisa.CreatePDF(source_html, dest=result_file)
+        return pisa_status.err
 
 # Prepare the template environment
 env = Environment(loader=FileSystemLoader('.'))
@@ -25,6 +31,6 @@ context = {
 rendered_html = template.render(context)
 
 # Convert to PDF
-HTML(string=rendered_html).write_pdf('output.pdf')
+convert_html_to_pdf(rendered_html, "output.pdf")
 
 print("PDF file has been created successfully!")
