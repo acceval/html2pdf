@@ -14,6 +14,8 @@ Before running the script, ensure you have the following installed:
 - Python 3.x
 - xhtml2pdf
 - Jinja2
+You can install the necessary Python packages using pip: pip install xhtml2pdf Jinja2
+
 
 ### Usage
 1. Prepare Your Data: Modify the data list in the script to include what you wish to list in the PDF.
